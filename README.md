@@ -2,7 +2,7 @@
 
 can save it on a txt file with adding the following code to the file:
 
-`py
+```py
 
 text = []
 
@@ -14,7 +14,7 @@ with open('h.txt', 'w') as f:
 
     f.write(''.join(text))
     
-`
+```
 
 has 2 type of chars:
 
