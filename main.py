@@ -1,9 +1,9 @@
 from PIL import Image
 import numpy as np
 
-all_letters = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`\'.            '
-less_letters = '•••••••••      '
-length = len(all_letters) # change if want less_letters
+all_chars = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`\'.            '
+less_chars = '•••••••••      '
+length = len(all_chars) # change if want less_chars
 
 
 image = Image.open(input('file name : '))
@@ -32,7 +32,7 @@ for i in range(height):
             _pos = int(np.floor(brightness / 256 * length))
             pos = length - 1 - _pos
         
-        print(all_letters[pos], end = '') # change if want less_letters
+        print(all_chars[pos], end = '') # change if want less_chars
         # text.append(all_letters[pos])
 
     print()
